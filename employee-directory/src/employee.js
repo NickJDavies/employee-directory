@@ -1,18 +1,10 @@
 import React from 'react';
-
-const headings = [
-    "firstName"
-]
-const rows = [
-    "john ",
-    "apple "
-]
+import TableMaker from './table';
 
 function employee(employees) {
   return (
     <div className="employeeTable">
-        {headings} + {rows[0]}
-        {/* <table headings={headings} rows={rows} /> */}
+        <TableMaker />
     </div>
   );
 }
